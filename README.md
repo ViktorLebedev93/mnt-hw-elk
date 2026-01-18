@@ -42,6 +42,9 @@ Filebeat следует сконфигурировать для отправки
 
 ## Решение 1
 
+![img1](img/img1.jpg)
+![img2](img/img2.jpg)
+
 ## Задание 2
 
 Перейдите в меню [создания index-patterns  в kibana](http://localhost:5601/app/management/kibana/indexPatterns/create) и создайте несколько index-patterns из имеющихся.
@@ -52,6 +55,23 @@ Filebeat следует сконфигурировать для отправки
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
 
 ## Решение 2
+
+Создали index pattern'ы под logstash из имеющихся
+
+![img3](img/img3.jpg)
+
+После создания увидели логи в discover
+
+![img4](img/img4.jpg)
+
+Добавили поля message, @timestamp, container.name
+Сделали поиск по ключу message : "error" за последние 24 часа
+
+![img5](img/img5.jpg)
+
+Логи dummy приложения
+
+![img6](img/img6.jpg)
  
 ---
 
